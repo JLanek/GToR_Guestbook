@@ -3,7 +3,7 @@ Welcome to our Guestbook
 <%= link_to "Dodaj swój wpis.", new_post_path %>
 </p>
 
-<% @posts.each do |post| %>
+<% @posts.reverse.each do |post| %>
     <blockquote>
     <p><%= post.body %></p>
     <footer> <%= post.author %> </footer>
