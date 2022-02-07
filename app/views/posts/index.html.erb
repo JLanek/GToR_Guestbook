@@ -1,6 +1,6 @@
 <p class="lead">
 <%= I18n.translate "hello" %>
-<%= link_to "Dodaj swój wpis.", new_post_path %>
+<%= link_to (I18n.translate "post"), new_post_path %>
 <%= I18n.translate "language" %>
       <%= link_to "PL", set_language_path( locale: "pl" ) %>
       <%= link_to "EN", set_language_path( locale: "en" ) %>
