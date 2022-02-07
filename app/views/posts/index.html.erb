@@ -2,8 +2,8 @@
 <%= I18n.translate "hello" %>
 <%= link_to "Dodaj swój wpis.", new_post_path %>
 <%= I18n.translate "language" %>
-      <a href="#">EN</a>
-      <a href="#">PL</a>
+      <%= link_to "PL", set_language_path( locale: "pl" ) %>
+      <%= link_to "EN", set_language_path( locale: "en" ) %>
     
 </p>
 
