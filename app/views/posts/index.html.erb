@@ -7,9 +7,10 @@
     
 </p>
 
-<% @posts.reverse.each do |post| %>
+<% @posts.each do |post| %>
     <blockquote>
     <p><%= post.body %></p>
     <footer> <%= post.author %> </footer>
     </blockquote>
 <% end %>
+<%= paginate @posts %>
