@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_05_145759) do
+ActiveRecord::Schema.define(version: 2022_02_08_133528) do
 
   create_table "posts", force: :cascade do |t|
     t.string "author"
     t.text "body"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "picture"
   end
 
 end

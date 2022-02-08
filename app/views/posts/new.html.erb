@@ -3,6 +3,10 @@ Welcome to our Guestbook, add your post :)
 </p>
 
 <%= form_for @post do |f| %>
+<div class="form-group">
+    <%= f.label :picture, "Picture" %>
+    <%= f.file_field :picture, class: "form-control" %>
+  </div>
   <div class="form-group">
     <%= f.label :author, "Author" %>
     <%= f.text_field :author, class: "form-control" %>
