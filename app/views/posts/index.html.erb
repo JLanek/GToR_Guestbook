@@ -8,9 +8,16 @@
 </p>
 
 <% @posts.each do |post| %>
+    <div class="row">
+    <div class="col-md-4">
+    <%= image_tag post.picture.url %>
+    </div>
+    <div class="col-md-8">
     <blockquote>
     <p><%= post.body %></p>
     <footer> <%= post.author %> </footer>
     </blockquote>
+    </div>
+    </div>
 <% end %>
 <center> <%= paginate @posts %> </center>
